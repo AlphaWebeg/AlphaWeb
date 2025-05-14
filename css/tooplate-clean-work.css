@@ -629,7 +629,7 @@ strong {
 
 .navbar-brand,
 .navbar-brand:hover {
-  color: var(--white-color);
+  color: var(--primary-color);
   font-size: var(--h6-font-size);
   font-weight: var(--font-weight-light);
 }
