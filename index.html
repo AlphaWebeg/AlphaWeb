@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>موقعك الطبي الشخصي - تصميم احترافي</title>
+
+        <!-- أضف هذا السطر في <head> قبل أي ملف CSS آخر -->
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/tooplate-clean-work.css" rel="stylesheet">
+
+        <style>
+            body, h1, h2, h3, h4, h5, h6, p, a, span, ul, li, button, input, textarea {
+                font-family: 'Cairo', 'Poppins', Arial, sans-serif !important;
+            }
+            .custom-plan-card {
+                background: #fff;
+                border-radius: 1.5rem;
+                box-shadow: 0 2px 16px 0 rgba(0,0,0,0.07);
+                transition: transform 0.2s, box-shadow 0.2s;
+                border: 2px solid #e3e3e3;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                min-height: 420px;
+                text-align: center;
+            }
+            .custom-plan-card:hover {
+                transform: translateY(-8px) scale(1.03);
+                box-shadow: 0 8px 32px 0 rgba(0,0,0,0.13);
+                border-color: #0dcaf0;
+            }
+            .custom-plan-card h4.services-title {
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                margin-bottom: 1.2rem;
+            }
+            .services-section.section-bg {
+                background: linear-gradient(120deg, #e0f7fa 0%, #f8fafc 100%);
+                background-image: url('images/coffe-shop-with-wooden-walls-unfocused.jpg');
+                background-size: cover;
+                background-position: center;
+                position: relative;
+            }
+            .services-section.section-bg::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background: rgba(255,255,255,0.7);
+                backdrop-filter: blur(7px);
+                z-index: 0;
+            }
+            .services-section.section-bg > .container {
+                position: relative;
+                z-index: 1;
+            }
+            .custom-plan-card ul {
+                padding: 0;
+                margin: 0 0 1.2rem 0;
+                list-style: none;
+                width: 100%;
+                text-align: right;
+            }
+            .custom-plan-card ul li {
+                color: #222;
+                font-size: 1.05rem;
+                font-weight: 500;
+                padding: 0.3em 0;
+                position: relative;
+                line-height: 1.8;
+                text-align: right;
+                margin: 0 auto;
+                display: block;
+            }
+            .custom-plan-card ul li span, .custom-plan-card ul li {
+                font-family: 'Cairo', 'Poppins', Arial, sans-serif !important;
+            }
+            .custom-plan-card .w-100.text-center.mt-auto {
+                margin-top: auto;
+                width: 100%;
+                text-align: right !important;
+                justify-content: flex-end;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-flex-start;
+            }
+            /* تأثير بلور قوي ودائم على صور slideshow */
+            .slideshow-blur {
+                filter: blur(228px) brightness(0.99) grayscale(1) contrast(1.1);
+                transition: none;
+            }
+        </style>
+
+<!--
+
+Tooplate 2132 Clean Work
+
+https://www.tooplate.com/view/2132-clean-work
+
+Free Bootstrap 5 HTML Template
+
+-->
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#hero-section">
+                    <img src="images/bubbles.png" class="logo img-fluid" alt="">
+                    <span class="ms-2">عيادة الدكتور</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#hero-section">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-section">من نحن</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#plans-section">خدماتنا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-section">اتصل بنا</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link custom-btn custom-border-btn custom-btn-bg-white btn" href="#contact-section">ابدأ الآن</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+
+            <section class="hero-section hero-section-full-height d-flex justify-content-center align-items-center" id="hero-section">
+                <div class="section-overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-12 text-center mx-auto">
+                            <h1 class="cd-headline rotate-1 text-white mb-4 pb-2">
+                                <span>خدمة تصميم موقع شخصي طبي</span>
+                                <span class="cd-words-wrapper">
+                                    <b class="is-visible">بيعكس صورتك الاحترافية</b>
+                                    <b>يزود ثقة الناس فيك</b>
+                                    <b>يساعد في ظهورك على Google</b>
+                                    <b>لينك ثابت لكل بياناتك</b>
+                                </span>
+                            </h1>
+                            <p class="text-white mb-4">وجود موقع شخصي بقى مهم لأي دكتور دلوقتي. الموقع بيكون بسيط وشيك باسمك، وبيعرض معلوماتك وسيرتك بشكل يليق بيك، من غير تفاصيل كتير.</p>
+                            <a class="custom-btn btn button button--atlas smoothscroll me-3" href="#plans-section">
+                                <span>خطط الاشتراك</span>
+                                <div class="marquee" aria-hidden="true">
+                                    <div class="marquee__inner">
+                                        <span>خطط الاشتراك</span>
+                                        <span>خطط الاشتراك</span>
+                                        <span>خطط الاشتراك</span>
+                                        <span>خطط الاشتراك</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="custom-btn custom-border-btn custom-btn-bg-white btn button button--pan smoothscroll" href="#contact-section">
+                                <span>تواصل معنا</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L40,229.3C80,235,160,245,240,250.7C320,256,400,256,480,240C560,224,640,192,720,176C800,160,880,160,960,138.7C1040,117,1120,75,1200,80C1280,85,1360,139,1400,165.3L1440,192L1440,320L1440,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+            </section>
+
+
+            <section class="intro-section" id="about-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-12 mb-4">
+                            <h2 class="mb-4">بناء موقع شخصي احترافي و بسيط.</h2>
+                                <p>هيكون ليك موقع شخصي بيعرض معلوماتك و خبراتك اماكن عملك و طرق للتواصل</p>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <img src="images/cleaning-concept-with-man-showing-business-card.jpg" class="featured-image img-fluid">
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="featured-block">
+                                <h2 class="mb-4">لماذا تحتاج موقع شخصي؟</h2>
+                                <p>بيعرض معلوماتك وسيرتك بشكل يليق بيك، من غير مقالات أو تفاصيل كتير.</p>
+                                <ul class="list-unstyled mb-3">
+                                    <li>✅ بيعكس صورتك الاحترافية على الإنترنت</li>
+                                    <li>✅ بيزود ثقة الناس فيك لما يدوروا على اسمك</li>
+                                    <li>✅ بيخلي ظهورك على Google أسهل، وكمان بيساعد في تعزيز وجودك على Google Maps</li>
+                                    <li>✅ بيكون لينك ثابت تقدر تبعته لأي جهة أو مريض يعرفوا كل حاجة عنك</li>
+                                    <li>✅ بيخليك مميز وسط زحمة السوشيال ميديا والمواقع التانية</li>
+                                </ul>
+                                <div class="alert alert-info mb-2">لو حابب تعرف أكتر أو تشوف شكل من الشغل، ابعتلي وأنا أوضحلك كل حاجة 👌</div>
+                                <a class="custom-btn btn button button--atlas mt-3" href="#contact-section">
+                                    <span>اعرف أكتر أو اطلب الخدمة</span>
+                                    <div class="marquee" aria-hidden="true">
+                                        <div class="marquee__inner">
+                                            <span>اعرف أكتر</span>
+                                            <span>اعرف أكتر</span>
+                                            <span>اعرف أكتر</span>
+                                            <span>اعرف أكتر</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services-section section-padding section-bg" id="plans-section">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12 col-12 mb-4 text-center">
+                            <h2 class="mb-4">خطط الاشتراك المتاحة</h2>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="services-thumb custom-plan-card h-100 d-flex flex-column align-items-center justify-content-between p-4">
+                                <div>
+                                    <h4 class="services-title mb-3 text-primary">الخطة الكاملة</h4>
+                                    <ul class="list-unstyled mb-3">
+                                        <li>✅ دومين باسمك (dr-yourname.com).</li>
+                                        <li>✅ استضافة قوية وسريعة.</li>
+                                        <li>✅ تصميم احترافي باسمك وسيرتك الذاتية.</li>
+                                        <li>✅ إعداد كامل للموقع وعرضه بشكل أنيق وسلس.</li>
+                                    </ul>
+                                </div>
+                                <div class="w-100 text-center mt-auto">
+                                    <div class="mb-2 fs-5">💰 <span class="fw-bold">1500 جنيه</span> للتصميم (مرة واحدة فقط).</div>
+                                    <div class="mb-2 fs-5">💰 <span class="fw-bold">3500 جنيه</span> للسنة الأولى (استضافة + دومين).</div>
+                                    <div class="mb-2 fs-5">💰 <span class="fw-bold">60 دولار</span> سنويًا للتجديد.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="services-thumb custom-plan-card h-100 d-flex flex-column align-items-center justify-content-between p-4">
+                                <div>
+                                    <h4 class="services-title mb-3 text-primary">الخطة الثانية (دومين + استضافة مجانية) (الأفضل)</h4>
+                                    <ul class="list-unstyled mb-3">
+                                        <li>✅ دومين باسمك (dr-yourname.com).</li>
+                                        <li>✅ تصميم احترافي بنفس الجودة.</li>
+                                        <li>✅ استضافة مجانية.</li>
+                                    </ul>
+                                </div>
+                                <div class="w-100 text-center mt-auto">
+                                    <div class="mb-2 fs-5">💰 <span class="fw-bold">1500 جنيه</span> للتصميم (مرة واحدة فقط).</div>
+                                    <div class="mb-2 fs-5">💰 <span class="fw-bold">500 جنيه</span> تركيب ونشر مرة واحدة فقط.</div>
+                                    <div class="mb-2 fs-5">💰 <span class="fw-bold">600 جنيه</span> للسنة الأولى (دومين فقط).</div>
+                                    <div class="mb-2 fs-5">💰 <span class="fw-bold">20 دولار</span> سنويًا لتجديد الدومين.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="services-thumb custom-plan-card h-100 d-flex flex-column align-items-center justify-content-between p-4">
+                                <div>
+                                    <h4 class="services-title mb-3 text-primary">الخطة الثالثة (بدون دومين مدفوع)</h4>
+                                    <ul class="list-unstyled mb-3">
+                                        <li>✅ دومين مجاني (doctorinfo.github.io/dr-name).</li>
+                                        <li>✅ تصميم احترافي بنفس الجودة.</li>
+                                        <li>✅ استضافة مجانية.</li>
+                                    </ul>
+                                </div>
+                                <div class="w-100 text-center mt-auto">
+                                    <div class="mb-2 fs-5">💰 <span class="fw-bold">1500 جنيه</span> للتصميم (مرة واحدة فقط).</div>
+                                    <div class="mb-2 fs-5">💰 <span class="fw-bold">500 جنيه</span> تركيب ونشر مرة واحدة فقط.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <div class="alert alert-info text-center">
+                                <ul class="mb-0 d-inline-block text-start">
+                                    <li>كل الخطط تحتوي على نفس التصميم الاحترافي.</li>
+                                    <li>الخطة الأولى هي الأنسب للأطباء اللي عايزين موقع جاهز بالكامل بدون تدخل تقني.</li>
+                                    <li>كل خطة قابلة للترقية لاحقًا لو العميل حب يطور.</li>
+                                    <li>2 تعديل مجاني في أي وقت للبيانات، وأي تعديل إضافي 200 جنيه.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-section section-padding" id="contact-section">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-12 text-center mb-4">
+                            <h2 class="mb-4">طرق التواصل</h2>
+                            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                                <a href="https://wa.me/201021822783" class="btn btn-success btn-lg px-4 py-2" target="_blank">
+                                    <i class="bi-whatsapp me-2"></i> تواصل واتساب
+                                </a>
+                                <a href="tel:01021822783" class="btn btn-primary btn-lg px-4 py-2">
+                                    <i class="bi-telephone-fill me-2"></i> اتصال مباشر
+                                </a>
+                            </div>
+                            <div class="alert alert-warning mt-4">للاستفسار أو طلب الخدمة، راسلنا على واتساب أو اتصل مباشرة.</div>
+                        </div>
+                        <div class="col-lg-8 col-12 mx-auto">
+                            <form class="custom-form consulting-form bg-white shadow-lg mb-5 mb-lg-0" action="" method="POST" role="form" id="google-form">
+                                <div class="consulting-form-header d-flex align-items-center">
+                                    <h3 class="mb-4">احجز استشارتك أو اطلب موقعك الآن</h3>
+                                </div>
+                                <div class="consulting-form-body">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <input type="text" name="entry.835443373" id="volunteer-name" class="form-control" placeholder="اسمك بالكامل" required>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <input type="tel" name="entry.1181110813" id="volunteer-phone" class="form-control" placeholder="رقم هاتفك" required pattern="^01[0-2,5]{1}[0-9]{8}$" title="يرجى إدخال رقم مصري صحيح مكون من 11 رقمًا ويبدأ بـ 01">
+                                        </div>
+                                    </div>
+                                    <select class="form-select form-control" name="entry.417759389" id="plan-type" aria-label="Default select example">
+                                        <option selected>اختر الخطة</option>
+                                        <option value="الخطة الكاملة">الخطة الكاملة</option>
+                                        <option value="دومين + استضافة مجانية">دومين + استضافة مجانية</option>
+                                        <option value="بدون دومين مدفوع">بدون دومين مدفوع</option>
+                                    </select>
+                                    <textarea name="entry.1255406855" rows="3" class="form-control" id="volunteer-message" placeholder="ملاحظات (اختياري)"></textarea>
+                                    <div class="col-lg-6 col-md-10 col-8 mx-auto">
+                                        <button type="submit" class="form-control btn btn-dark">إرسال الطلب</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <script>
+        // إرسال البيانات إلى Google Forms عبر AJAX ومنع ظهور صفحة جوجل فورم
+        var googleForm = document.getElementById('google-form');
+        if(googleForm) {
+            googleForm.addEventListener('submit', function(e) {
+                var phoneInput = document.getElementById('volunteer-phone');
+                var phone = phoneInput.value.trim();
+                var phonePattern = /^01[0-2,5]{1}[0-9]{8}$/;
+                if (!phonePattern.test(phone)) {
+                    e.preventDefault();
+                    phoneInput.classList.add('is-invalid');
+                    phoneInput.setCustomValidity('يرجى إدخال رقم مصري صحيح مكون من 11 رقمًا ويبدأ بـ 01');
+                    alert('يرجى إدخال رقم هاتف مصري صحيح (مثال: 010xxxxxxxx)');
+                    return false;
+                } else {
+                    phoneInput.classList.remove('is-invalid');
+                    phoneInput.setCustomValidity('');
+                }
+                e.preventDefault();
+                var formData = new FormData(googleForm);
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', 'https://docs.google.com/forms/d/e/1FAIpQLSeEcl1q--MoMRamkkySi16P95v8rQ-_WTCkuFh35D2mULkUKQ/formResponse');
+                xhr.setRequestHeader('Accept', 'application/xml, text/xml, */*; q=0.01');
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState === 4) {
+                        alert('تم إرسال طلبك بنجاح وسيتم التواصل معك قريباً!');
+                        googleForm.reset();
+                    }
+                };
+                xhr.send(formData);
+            });
+        }
+        </script>
+
+        <!-- مثال استخدام الكلاس:
+        <img src="images/slideshow/afro-woman-cleaning-window-with-rag-home.jpg" class="slideshow-blur" alt="...">
+        -->
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.backstretch.min.js"></script>
+        <script src="js/counter.js"></script>
+        <script src="js/countdown.js"></script>
+        <script src="js/init.js"></script>
+        <script src="js/modernizr.js"></script>
+        <script src="js/animated-headline.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>
